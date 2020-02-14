@@ -1,0 +1,7 @@
+.home {
+  color: rgb(248,249,250);
+}
+
+.full-height {
+  height: calc(100vh - 80px);
+}

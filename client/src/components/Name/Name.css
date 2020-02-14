@@ -1,0 +1,32 @@
+#name {
+  line-height: 1;
+  letter-spacing: .8rem;
+  font-size: 3.5rem;
+}
+
+#subname {
+  letter-spacing: .43rem;
+  font-size: 1.3rem;
+}
+
+#M, #E, #R, #N {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    font-size: 2.5rem;
+}
+
+#M {
+    color: #12914F;
+}
+
+#E {
+    color: #CB7C70;
+}
+
+#R {
+    color: #61DAFB;
+}
+
+#N {
+    color: #75AE64;
+}
