@@ -1,10 +1,7 @@
 require('dotenv').config();
 const express = require("express");
 const path = require("path");
-const router = require("express").Router();
-
 const nodemailer = require("nodemailer");
-
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -16,7 +13,6 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-
 let transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -24,7 +20,6 @@ let transporter = nodemailer.createTransport({
     pass: process.env.MAILER_PASSWORD
   }
 });
-
 
 app.post("/email", (req, res) => {
   const mailOptions = {
@@ -49,15 +44,11 @@ app.post("/email", (req, res) => {
 // Define API routes here
 
 
-
-
 // Send every other request to the React app (API routes before this!)
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-
-// for socket.io; let server = app.listen..... then socket(server)
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });

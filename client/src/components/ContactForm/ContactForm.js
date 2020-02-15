@@ -19,7 +19,9 @@ function ContactForm() {
         .then(res => {
           console.log(res)
         });
-    };
+    } else {
+      console.log("invaled email");
+    }
   };
 
   return (
