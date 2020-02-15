@@ -7,12 +7,20 @@
 #subname {
   letter-spacing: .43rem;
   font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.divider {
+  margin: auto;
+  border: solid 1px #E8EEF2;
+  width: 460px;
 }
 
 #M, #E, #R, #N {
+    margin-top: 10px;
     margin-left: 1.1rem;
     margin-right: 1.1rem;
-    font-size: 2.5rem;
+    font-size: 40px;
 }
 
 #M {
@@ -29,4 +37,22 @@
 
 #N {
     color: #75AE64;
+}
+
+@media screen and (max-width: 600px) {
+  #name {
+    font-size: 2.5rem;
+  }
+
+  #subname {
+    font-size: 1rem;
+  }
+
+  .divider {
+    max-width: 380px;
+  }
+
+  #M, #E, #R, #N {
+    font-size: 20px;
+  }
 }

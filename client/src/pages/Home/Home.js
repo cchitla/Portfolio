@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 import Name from '../../components/Name/Name';
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
+import projects from '../../projects.json';
 
 function Home() {
   return (
@@ -15,7 +16,7 @@ function Home() {
           </Col>
 
           <Col md>
-            Right col
+            {projects.map(project => <ProjectCard key={project.title} data={project} />) }
         </Col>
 
         </Row>

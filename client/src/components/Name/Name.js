@@ -11,6 +11,7 @@ function Name() {
     <div id="subname">
       Full Stack Web Development
     </div>
+    <div className="divider"></div>
 
     <span id="M">M</span>
     <span id="E">E</span>

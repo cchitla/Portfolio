@@ -1,0 +1,24 @@
+.project-card {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 460px;
+  height: 280px;
+}
+
+.git-link {
+  color: rgb(163, 168, 172)
+}
+
+.git-link:hover {
+  color: #E8EEF2;
+  text-decoration: none;
+}
+
+.project-link {
+  border: solid 2px rgb(16, 24, 44);
+}
+
+.project-link:hover  {
+  border: solid 2px rgb(163, 168, 172)
+}

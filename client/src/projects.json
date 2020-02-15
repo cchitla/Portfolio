@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Casino S.H.I.C.",
+    "image": "/resources/images/casino.png",
+    "github": "https://github.com/cchitla/casino-shic",
+    "url": "https://casino-shic.herokuapp.com/",
+    "description": ""
+  },
+  {
+    "title": "Brewery Search",
+    "image": "/resources/images/brew2.png",
+    "github": "https://github.com/cchitla/Brewery-Search",
+    "url": "https://cchitla.github.io/Brewery-Search/",
+    "description": ""
+  }
+]
